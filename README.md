@@ -89,7 +89,7 @@ Here's a longer example that shows some of the elements used together in a docum
 ### CSS
 CSS is a language used to describe the presentation of an HTML document.
 
-In CSS, you define "rulesets" by using the names of the elements that you want to style, called the "selector", followed by curly braces `{}` containing a set of property names and values that you want on the selected elements:
+In CSS, you define "rulesets" by using the names of the elements that you want to style, called a "selector", followed by curly braces `{}` containing a set of property names and values that you want on the selected elements:
 
     p {
         background: blue;
@@ -139,7 +139,26 @@ To select elements that contain an certain attribute, add the attribute name in 
 #### CSS Properties
 CSS properties cover a broad range of styling areas. We're just going to focus on a couple at first: font/text styling and layout.
 
-##### 
+##### Font/Text Styling
+
+##### Layout
+When we talk about layout, we're referring to how elements are positioned, both relative to the page and also to each other. A couple of the ways that we can affect layout with CSS is by setting the amount of space within the element and the space around it.
+
+You can imagine that each of the HTML elements defined in a document is contained with an invisible box. Space _inside_ the box is called "padding", space _outside_ the box is called "margin". We can set these properties on an element with CSS:
+
+    p {
+        padding: 10px;
+        margin: 5px;
+    }
+    
+We can also just set padding or margins on just one side, or set multiple sides in one statement:
+
+    p {
+        padding-top: 5px;
+        margin-bottom: 3px;
+        
+        margin: 0px 1px 2px 3px;
+    }
 
 ### Further Reading
 - [Mozilla: HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
