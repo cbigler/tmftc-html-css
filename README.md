@@ -123,7 +123,7 @@ To select elements by the value of their `id` attribute, prefix the name used in
 ##### By class
 To select elements by their `class` attribute, prefix the name in the class attribute with a period `.`:
 
-    #important-text {
+    .important-text {
         font-size: 30px;
         color: white;
         background: red;
@@ -132,7 +132,7 @@ To select elements by their `class` attribute, prefix the name in the class attr
 ##### By attribute
 To select elements that contain an certain attribute, add the attribute name in brackets after the element type:
 
-    #img[src] {
+    img[src] {
         border: 1px solid red;
     }
     
